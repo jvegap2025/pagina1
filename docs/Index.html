@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TIE Transporte y Logistica</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+      <div class="logo-container">
+      <img src="C:\JVP-Disco\CURSO-GIT\Pagina1\logo_TIE-01.jpg" alt="Logo TIE Transporte">
+    </div>
+    <h1>TIE Transporte y Logística</h1>
+    <nav>
+      <ul>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="hero">
+    <h2>Tu carga, nuestra misión</h2>
+    <p>Soluciones confiables y rápidas en transporte terrestre.</p>
+    <button onclick="mostrarFormulario()">Solicita una cotización</button>
+  </section>
+  <!-- Botón -->
+
+<!-- Formulario oculto -->
+<div id="formularioCotizacion" style="display:none; margin-top:20px;">
+  <h3>Formulario de Cotización</h3>
+  <form id="cotizacionForm">
+    <label>Nombre:</label><br>
+    <input type="text" name="nombre" required><br><br>
+
+    <label>Email:</label><br>
+    <input type="email" name="email" required><br><br>
+
+    <label>Tipo de servicio:</label><br>
+    <select name="servicio">
+      <option value="pasajeros">Transporte de pasajeros</option>
+      <option value="carga">Transporte de carga</option>
+    </select><br><br>
+
+    <label>Detalles:</label><br>
+    <textarea name="detalles" rows="4" cols="40"></textarea><br><br>
+
+    <button type="submit">Enviar</button>
+  </form>
+</div>
+
+
+  <section id="servicios">
+    <!--<h3>Servicios</h3>
+    <ul>
+      <li>Transporte nacional</li>
+      <li>Logística y distribución</li>
+      <li>Seguimiento en tiempo real</li>
+    </ul>-->
+  </section>
+  <section class="servicios">
+  <h2>Servicios de Transporte</h2>
+  <div class="opciones">
+    <div class="opcion">
+      <img src="C:\JVP-Disco\CURSO-GIT\Pagina1\personal3.jpg" alt="Transporte de Personal">
+      <h3>Transporte de Personal</h3>
+      <p>Traslado de nuestros clientes desde su origen a su destino de forma segura.</p>
+      <p>Traslados en región metropolitana a clientes privados y empresas.</p>
+      <p>Hacemos servicios especiales fuera de la región (movilización del personal, excursiones, etc).</p>
+      <!--<a href="#personal" class="btn">Ver más</a>-->
+    </div>
+    <div class="opcion">
+      <img src="C:\JVP-Disco\CURSO-GIT\Pagina1\carga2.jpg" alt="Transporte de Carga">
+      <h3>Transporte de Carga</h3>
+      <p>Traslados de diferentes tipos de carga para facilitar la movilización de nuestros clientes y puedan realizar sus labores sin mayores preocupaciones.</p>
+      <p>Prestamos servicios dentro y fuera de la región metropolitana.</p>
+      <!--<a href="#carga" class="btn">Ver más</a>--->
+    </div>
+  </div>
+</section>
+
+
+  <section id="nosotros">
+    <h3>¿Quiénes somos?</h3>
+    <p>Somos una empresa con 5 años de experiencia en transporte y logística. con el fin de poder ayudar y entregar la mejor calidad hacia nuestros clientes en los servicios de traslado de nuestros pasajeros y el transporte de carga.</p>
+    <p>Contamos con personal adecuado y dedicado a brindar un buen servicio, siempre pendientes de mejorar la experiencia del traslado de personal y transporte de carga, para eso contamos con vehículos como: taxis, van y camiones de carga.</p>
+  </section>
+
+  <section id="contacto">
+    <h3>Contacto</h3>
+    <p>Escribenos a isaac.sanhueza.g@tietransporte.cl.</p>
+    <p>Envianos un whatsapp a +56953985807.</p>
+    <form>
+      <input type="text" placeholder="Tu nombre">
+      <input type="email" placeholder="Tu correo">
+      <textarea placeholder="Mensaje"></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+    <form action="https://formsubmit.co/jvegap@gmail.com" method="post" enctype="text/plain">
+     <label>Nombre:</label>
+     <input type="text" name="nombre"><br>
+     <label>Mensaje:</label>
+     <textarea name="mensaje"></textarea><br>
+     <input type="submit" value="Enviar">
+</form>
+
+  </section>
+
+  <footer>
+    <p>&copy; 2025 TIE Transporte. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
