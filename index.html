@@ -32,6 +32,7 @@
 <div id="formularioCotizacion" style="display:none; margin-top:20px;">
   <h3>Formulario de Cotización</h3>
   <form id="cotizacionForm">
+    <form action="https://formsubmit.co/jvegap@gmail.com" method="POST">
     <label>Nombre:</label><br>
     <input type="text" name="nombre" required><br><br>
 
@@ -46,8 +47,14 @@
 
     <label>Detalles:</label><br>
     <textarea name="detalles" rows="4" cols="40"></textarea><br><br>
-
+    <!-- Opcional: evitar spam -->
+     <input type="hidden" name="_captcha" value="false">
+  
+     <!-- Opcional: redirigir después de enviar -->
+     <input type="hidden" name="_next" value="https://jvegap2025.github.io/pagina1/">
+  
     <button type="submit">Enviar</button>
+    </form>
   </form>
 </div>
 
