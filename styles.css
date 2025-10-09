@@ -96,3 +96,44 @@ footer {
   text-align: center;
   padding: 10px;
 }
+.contacto {
+  max-width: 100px;
+  margin: auto;
+  padding: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input, textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 100%; /* ocupa todo el ancho disponible del contenedor */
+  box-sizing: border-box; /* evita que el padding rompa el diseño */
+}
+
+
+button {
+  align-self: flex-end;
+  padding: 10px 20px;
+  background-color: #007BFF; /* azul corporativo */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
