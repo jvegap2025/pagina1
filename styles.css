@@ -158,6 +158,54 @@ footer {
   background-color: #0056b3;
 }
 
+.form-cotizacion-simple {
+  max-width: 500px;
+  margin: auto;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.campo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.campo label {
+  width: 100px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+  flex: 1;
+  padding: 6px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.campo textarea {
+  resize: vertical;
+}
+
+button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+
 form {
   display: flex;
   flex-direction: column;

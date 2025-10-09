@@ -32,29 +32,41 @@
 <div id="formularioCotizacion" style="display:none; margin-top:20px;">
   <h3>Formulario de Cotización</h3>
   <!--<form id="cotizacionForm">-->
-    <form class="form-cotizacion" action="https://formsubmit.co/jvegap@gmail.com" method="POST">
-    <label>Nombre:</label><br>
-    <input type="text" name="nombre" required><br><br>
-
+  <!--<  <form class="form-cotizacion" action="https://formsubmit.co/jvegap@gmail.com" method="POST">-->
+    <form class="form-cotizacion-simple" action="https://formsubmit.co/jvegap@gmail.com" method="POST">
+    
+    <div class="campo">
+      <label>Nombre:</label><br>
+      <input type="text" name="nombre" required><br><br>
+    </div>
+    <div class="campo">
     <label>Email:</label><br>
     <input type="email" name="email" required><br><br>
+    </div>
 
-    <label>Tipo de servicio:</label><br>
-    <select name="servicio">
-      <option value="pasajeros">Transporte de pasajeros</option>
-      <option value="carga">Transporte de carga</option>
-    </select><br><br>
+    <div class="campo">
+      <label>Tipo de servicio:</label><br>
+      <select name="servicio">
+        <option value="pasajeros">Transporte de pasajeros</option>
+        <option value="carga">Transporte de carga</option>
+      </select><br><br>
+     </div>
+     <div class="campo">
+       <label>Origen:</label><br>
+       <input type="text" name="origen" required><br><br>
+    </div>
+    <div class="campo">
+      <label>Destino:</label><br>
+      <input type="text" name="destino" required><br><br>
+    </div>
+    <div class="campo">
+      <label>Detalles:</label><br>
+      <textarea name="detalles" rows="4" cols="40"></textarea><br><br>
+    </div>
 
-    <label>Origen:</label><br>
-    <input type="text" name="origen" required><br><br>
-    <label>Destino:</label><br>
-    <input type="text" name="destino" required><br><br>
-
-    <label>Detalles:</label><br>
-    <textarea name="detalles" rows="4" cols="40"></textarea><br><br>
     <!-- Opcional: evitar spam -->
-     <input type="hidden" name="_captcha" value="false">
-  
+    <input type="hidden" name="_captcha" value="false">
+    
      <!-- Opcional: redirigir después de enviar -->
      <input type="hidden" name="_next" value="https://jvegap2025.github.io/pagina1/">
   
