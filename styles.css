@@ -96,6 +96,7 @@ footer {
   text-align: center;
   padding: 10px;
 }
+.contacto input,
 .contacto {
   max-width: 400px; /* ajusta el ancho aquí */
   margin: auto;
