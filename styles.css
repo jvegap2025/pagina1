@@ -107,18 +107,19 @@ footer {
   font-family: 'Segoe UI', sans-serif;
 }
 .form-cotizacion {
-  max-width: 360px;
-  margin: auto;
-  padding: 15px;
+  max-width: 320px;         /* más estrecho */
+  margin-left: 0;           /* alineado a la izquierda */
+  padding: 10px;
   background-color: #f4f4f4;
-  border-radius: 8px;
-  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  border-radius: 6px;
+  box-shadow: 0 0 6px rgba(0,0,0,0.1);
   font-family: 'Segoe UI', sans-serif;
 }
 
 .form-cotizacion label {
   font-weight: bold;
-  margin-bottom: 4px;
+  font-size: 14px;
+  margin-bottom: 2px;
   display: block;
 }
 
@@ -126,29 +127,31 @@ footer {
 .form-cotizacion select,
 .form-cotizacion textarea {
   width: 100%;
-  height: 32px;
-  font-size: 14px;
-  padding: 6px 8px;
-  margin-bottom: 10px;
+  height: 28px;
+  font-size: 13px;
+  padding: 4px 6px;
+  margin-bottom: 6px;       /* menos espacio entre campos */
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
 }
 
 .form-cotizacion textarea {
-  height: 80px;
+  height: 70px;
   resize: vertical;
 }
 
 .form-cotizacion button {
-  padding: 8px 16px;
+  padding: 6px 12px;
   background-color: #007BFF;
   color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 4px;
+  font-size: 14px;
   font-weight: bold;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  margin-top: 8px;
 }
 
 .form-cotizacion button:hover {
