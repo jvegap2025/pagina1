@@ -110,6 +110,7 @@ footer {
 .form-cotizacion select,
 .form-cotizacion textarea {
   width: 80%;         /* ajusta el ancho según tu diseño */
+  max-width: 200px; /* ajusta el ancho aquí */
   height: 30px;       /* más compacto que el de contacto */
   font-size: 15px;
   margin-bottom: 10px;
