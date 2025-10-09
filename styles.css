@@ -130,7 +130,7 @@ footer {
   height: 28px;
   font-size: 13px;
   padding: 4px 6px;
-  margin-bottom: 6px;       /* menos espacio entre campos */
+  margin-bottom: 1px;       /* menos espacio entre campos */
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
