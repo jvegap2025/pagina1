@@ -106,16 +106,34 @@ footer {
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
   font-family: 'Segoe UI', sans-serif;
 }
-.formularioCotizacion input,
-.formularioCotizacion {
-  max-width: 400px; /* ajusta el ancho aquí */
-  margin: auto;
-  padding: 20px;
-  background-color: #f9f9f9;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  font-family: 'Segoe UI', sans-serif;
+.form-cotizacion input,
+.form-cotizacion select,
+.form-cotizacion textarea {
+  width: 80%;         /* ajusta el ancho según tu diseño */
+  height: 30px;       /* más compacto que el de contacto */
+  font-size: 15px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
 }
+
+.form-cotizacion textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+.form-cotizacion button {
+  padding: 8px 16px;
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form-cotizacion button:hover {
+  background-color: #003f80;
+}
+
 form {
   display: flex;
   flex-direction: column;
