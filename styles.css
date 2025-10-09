@@ -97,9 +97,13 @@ footer {
   padding: 10px;
 }
 .contacto {
-  max-width: 100px;
+  max-width: 400px; /* ajusta el ancho aquí */
   margin: auto;
   padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  font-family: 'Segoe UI', sans-serif;
 }
 
 form {
@@ -108,32 +112,34 @@ form {
   gap: 15px;
 }
 
-.form-group {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
 input, textarea {
+  width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 16px;
-  width: 100%; /* ocupa todo el ancho disponible del contenedor */
-  box-sizing: border-box; /* evita que el padding rompa el diseño */
+  box-sizing: border-box;
 }
 
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
 
 button {
-  align-self: flex-end;
+  width: fit-content;
+  align-self: center;
   padding: 10px 20px;
   background-color: #007BFF; /* azul corporativo */
   color: white;
   border: none;
   border-radius: 5px;
+  font-weight: bold;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 button:hover {
   background-color: #0056b3;
 }
+
